@@ -41,8 +41,8 @@ class Octo_pantiltcameraPlugin(octoprint.plugin.SettingsPlugin,
 			pan=dict(
 				stepSize=5,
 				initialValue=30,
-				minValue=-10,
-				maxValue=60,
+				minValue=0,
+				maxValue=50,
 				gpio=17,
 				invert=True
 			),
@@ -64,11 +64,18 @@ class Octo_pantiltcameraPlugin(octoprint.plugin.SettingsPlugin,
 		sleep(0.3)
 		pwm.stop()
 
+	def limitValues(self, panValue, tiltValue):
+		self.panValue = min(panValue, int(self._settings.get(["pan", "maxValue"])))
+		self.panValue = max(self.panValue, int(self._settings.get(["pan", "minValue"])))
+		self.tiltValue = min(tiltValue, int(self._settings.get(["tilt", "maxValue"])))
+		self.tiltValue = max(self.tiltValue, int(self._settings.get(["tilt", "minValue"])))
+
 	def setAngles(self, panValue, tiltValue):
+ 		self.limitValues(panValue, tiltValue);
  		self._logger.info("pan: {}".format(self.panValue))
 		self._logger.info("tilt: {}".format(self.tiltValue))
-		self.setServoAngle(self.panPort, panValue)
-		self.setServoAngle(self.tiltPort, tiltValue)
+		self.setServoAngle(self.panPort, self.panValue)
+		self.setServoAngle(self.tiltPort, self.tiltValue)
 
 	def get_assets(self):
 		return dict(
@@ -93,8 +100,6 @@ class Octo_pantiltcameraPlugin(octoprint.plugin.SettingsPlugin,
 			if "tiltValue" in data:
 				tiltValue = int(data["tiltValue"])
 			self.setAngles(panValue, tiltValue)
-			self.panValue = panValue
-			self.tiltValue = tiltValue
 		elif command == "left" or command == "right":
 			panValue = int(self.panValue)
 
@@ -108,7 +113,6 @@ class Octo_pantiltcameraPlugin(octoprint.plugin.SettingsPlugin,
 				panValue = panValue + (stepSize if command == "right" else -stepSize)
 
 			self.setAngles(panValue, self.tiltValue)
-			self.panValue = panValue
 		elif command == "up" or command == "down":
 			tiltValue = int(self.tiltValue)
 
@@ -122,7 +126,6 @@ class Octo_pantiltcameraPlugin(octoprint.plugin.SettingsPlugin,
 				tiltValue = tiltValue + (stepSize if command == "up" else -stepSize)
 
 			self.setAngles(self.panValue, tiltValue)
-			self.tiltValue = tiltValue
 
 	def on_api_get(self, request):
 		return flask.jsonify(panValue=self.panValue, tiltValue=self.tiltValue)
@@ -141,7 +144,6 @@ class Octo_pantiltcameraPlugin(octoprint.plugin.SettingsPlugin,
 				pip="https://github.com/antonhensen81/OctoPrint-PanTilt/archive/{target_version}.zip"
 			)
 		)
-
 
 __plugin_name__ = "OctoPrint Pan Tilt Camera"
 
