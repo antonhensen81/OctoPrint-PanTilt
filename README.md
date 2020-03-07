@@ -1,6 +1,8 @@
 # OctoPrint Pan Tilt Camera
 
-Provides support for controlling two servos using GPIO so a pan tilt camera can be controlled. 
+Provides support for controlling two servos using GPIO so a pan tilt camera can be controlled.
+
+Based on https://github.com/Salandora/OctoPrint-PanTilt, but instead of calling a script it directly controls two GPIO pins. 
 
 ## Setup
 
