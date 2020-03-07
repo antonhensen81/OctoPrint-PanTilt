@@ -16,10 +16,11 @@ Click the image below for a short demo.
 
 The default wiring is shown below, it shows how the two servos can be connected to the Raspberry Pi (Model3). 
 The GPIO ports used in this example match the default configuration of GPIO ports 17 and 18.
-Other scenarios are possible and GPIO pins can be configured to be what you like (see [Configuration](#Configuration)). 
+Other scenarios are possible and GPIO pins can be configured to be what you like (see [Configuration](#Configuration)).
 
 ![Wiring](https://raw.githubusercontent.com/antonhensen81/OctoPrint-PanTilt/master/images/wiring.png)
 
+Note: Depending on the power supply and servos you use you might need to connect the servos to an external power source.
 
 ## Setup
 
