@@ -1,1 +1,6 @@
-#control_pantilt>div{float:left}
+#control_pantilt{
+        display:inline-block;
+}
+#control_pantilt>div{
+        float:left;
+}
