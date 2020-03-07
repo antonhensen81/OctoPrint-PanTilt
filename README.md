@@ -14,7 +14,7 @@ Click the image below for a short demo.
 
 ## Wiring
 
-The default wiring looks as shown below. Although other scenarios are possible as well and GPIO pins can be configured to be what you like.
+The default wiring is shown below. Although other scenarios are possible and GPIO pins can be configured to be what you like.
 
 ![Wiring](https://raw.githubusercontent.com/antonhensen81/OctoPrint-PanTilt/master/images/wiring.png)
 
