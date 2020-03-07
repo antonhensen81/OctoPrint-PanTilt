@@ -12,6 +12,13 @@ Click the image below for a short demo.
 [![Demo Pan Tilt Plugin](https://raw.githubusercontent.com/antonhensen81/OctoPrint-PanTilt/master/images/demo.png)](https://www.youtube.com/watch?v=HLaBd1Q5k40)
 
 
+## Wiring
+
+The default wiring looks as shown below. Although other scenarios are possible as well and GPIO pins can be configured to be what you like.
+
+![Wiring](https://raw.githubusercontent.com/antonhensen81/OctoPrint-PanTilt/master/images/wiring.png)
+
+
 ## Setup
 
 Install via the bundled [Plugin Manager](http://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html) using this URL: [https://github.com/antonhensen81/OctoPrint-PanTilt/archive/master.zip](https://github.com/antonhensen81/OctoPrint-PanTilt/archive/master.zip)
