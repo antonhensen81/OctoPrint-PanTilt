@@ -20,7 +20,7 @@ Other scenarios are possible and GPIO pins can be configured to be what you like
 
 ![Wiring](https://raw.githubusercontent.com/antonhensen81/OctoPrint-PanTilt/master/images/wiring.png)
 
-Note: Depending on the power supply and servos you use you might need to connect the servos to an external power source.
+Note: Depending on the power supply and servos you use you might need to connect the servos to an external power source instead of taking power from the Raspberry Pi as illustrated.
 
 ## Setup
 
