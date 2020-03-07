@@ -6,6 +6,12 @@ Based on https://github.com/Salandora/OctoPrint-PanTilt, but instead of calling 
 
 I used this [3D Print](https://www.thingiverse.com/thing:708819), but you can use any design that uses two servos.
 
+## Demo
+Click the image below for a short demo.
+
+![Demo Pan Tilt Plugin](https://raw.githubusercontent.com/antonhensen81/OctoPrint-PanTilt/master/images/demo.png)](https://www.youtube.com/watch?v=HLaBd1Q5k40)
+
+
 ## Setup
 
 Install via the bundled [Plugin Manager](http://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html) using this URL: [https://github.com/antonhensen81/OctoPrint-PanTilt/archive/master.zip](https://github.com/antonhensen81/OctoPrint-PanTilt/archive/master.zip)
@@ -21,3 +27,4 @@ You will find the plugin manager in OctoPrint under settings. Then select "Get m
 - If needed you can invert the direction either servo.
 
 ![Configuration](https://raw.githubusercontent.com/antonhensen81/OctoPrint-PanTilt/master/images/configuration.png)
+
