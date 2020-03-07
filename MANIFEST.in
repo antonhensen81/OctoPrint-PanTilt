@@ -1,0 +1,4 @@
+include README.md
+recursive-include octoprint_octo_pantiltcamera/templates *
+recursive-include octoprint_octo_pantiltcamera/translations *
+recursive-include octoprint_octo_pantiltcamera/static *

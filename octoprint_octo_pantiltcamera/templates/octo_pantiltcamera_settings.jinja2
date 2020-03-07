@@ -1,0 +1,93 @@
+<div>
+    <h1>{{ _('Pan settings') }}</h1>
+    <div>
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label">{{ _('Initial Pan Value') }}</label>
+                <div class="controls">
+                    <input type="number" data-bind="value: settings.plugins.octo_pantiltcamera.pan.initialValue">
+                </div>
+            </div>
+        </form>
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label">{{ _('Min Pan Value') }}</label>
+                <div class="controls">
+                    <input type="number" data-bind="value: settings.plugins.octo_pantiltcamera.pan.minValue">
+                </div>
+            </div>
+        </form>
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label">{{ _('Max Pan Value') }}</label>
+                <div class="controls">
+                    <input type="number" data-bind="value: settings.plugins.octo_pantiltcamera.pan.maxValue">
+                </div>
+            </div>
+        </form>
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label">{{ _('GPIO Port') }}</label>
+                <div class="controls">
+                    <input type="number" data-bind="value: settings.plugins.octo_pantiltcamera.pan.gpio">
+					(Requires restart)
+                </div>
+            </div>
+        </form>
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label">{{ _('Invert Pan Buttons') }}</label>
+                <div class="controls">
+                    <input type="checkbox" data-bind="checked: settings.plugins.octo_pantiltcamera.pan.invert">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <h1>{{ _('Tilt settings') }}</h1>
+    <div>
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label">{{ _('Initial Tilt Value') }}</label>
+                <div class="controls">
+                    <input type="number" data-bind="value: settings.plugins.octo_pantiltcamera.tilt.initialValue">
+                </div>
+            </div>
+        </form>
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label">{{ _('Min Tilt Value') }}</label>
+                <div class="controls">
+                    <input type="number" data-bind="value: settings.plugins.octo_pantiltcamera.tilt.minValue">
+                </div>
+            </div>
+        </form>
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label">{{ _('Max Tilt Value') }}</label>
+                <div class="controls">
+                    <input type="number" data-bind="value: settings.plugins.octo_pantiltcamera.tilt.maxValue">
+                </div>
+            </div>
+        </form>
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label">{{ _('GPIO Port') }}</label>
+                <div class="controls">
+                    <input type="number" data-bind="value: settings.plugins.octo_pantiltcamera.tilt.gpio">
+					(Requires restart)
+                </div>
+            </div>
+        </form>
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label">{{ _('Invert Tilt Buttons') }}</label>
+                <div class="controls">
+                    <input type="checkbox" data-bind="checked: settings.plugins.octo_pantiltcamera.tilt.invert">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
