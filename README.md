@@ -9,7 +9,7 @@ I used this [3D Print](https://www.thingiverse.com/thing:708819), but you can us
 ## Demo
 Click the image below for a short demo.
 
-![Demo Pan Tilt Plugin](https://raw.githubusercontent.com/antonhensen81/OctoPrint-PanTilt/master/images/demo.png)](https://www.youtube.com/watch?v=HLaBd1Q5k40)
+[![Demo Pan Tilt Plugin](https://raw.githubusercontent.com/antonhensen81/OctoPrint-PanTilt/master/images/demo.png)](https://www.youtube.com/watch?v=HLaBd1Q5k40)
 
 
 ## Setup
