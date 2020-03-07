@@ -25,7 +25,7 @@ Other scenarios are possible and GPIO pins can be configured to be what you like
 
 Install via the bundled [Plugin Manager](http://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html) using this URL: [https://github.com/antonhensen81/OctoPrint-PanTilt/archive/master.zip](https://github.com/antonhensen81/OctoPrint-PanTilt/archive/master.zip)
 
-You will find the plugin manager in OctoPrint under settings. Then select "Get more..." and paste the URL in "... from URL" like shown below and click Install.
+You will find the plugin manager in OctoPrint under settings. Then select "**Get more...**" and paste the URL in "**... from URL**" like shown below. Then click **Install**.
 
 ![Install](https://raw.githubusercontent.com/antonhensen81/OctoPrint-PanTilt/master/images/install.png)
 
