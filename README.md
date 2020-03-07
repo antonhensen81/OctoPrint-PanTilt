@@ -14,4 +14,8 @@ You will find the plugin manager in OctoPrint under settings. Then select "Get m
 
 ## Configuration
 
+- Ensure that you have the correct GPIO pins configured for both Pan and Tilt. If you need to change the port numbers you will have to restart.
+- Find the limits that work for your servos and configure them accordingly (min, max), just like the initial values for both the pan and tilt servos.
+- If needed you can invert the direction either servo.
+
 ![Configuration](https://raw.githubusercontent.com/antonhensen81/OctoPrint-PanTilt/master/images/configuration.png)
