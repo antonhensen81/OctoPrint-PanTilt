@@ -4,10 +4,10 @@ plugin_identifier = "octo_pantiltcamera"
 plugin_package = "octoprint_octo_pantiltcamera"
 plugin_name = "OctoPrint Pan Tilt Camera"
 plugin_version = "0.1.0"
-plugin_description = "drive two servos for a pan tilt camera"
+plugin_description = "Drive two servos for a pan tilt camera"
 plugin_author = "Anton Hensen"
 plugin_author_email = ""
-plugin_url = "https://github.com/antonhensen81/OctoPrint Pan Tilt Camera"
+plugin_url = "https://github.com/antonhensen81/OctoPrint-PanTilt"
 plugin_license = "AGPLv3"
 plugin_requires = ["RPi.GPIO>=0.6.5","requests>=2.7"]
 plugin_additional_data = []
