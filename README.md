@@ -2,7 +2,7 @@
 
 Provides support for controlling two servos using GPIO so a pan tilt camera can be controlled.
 
-Based on https://github.com/Salandora/OctoPrint-PanTilt, but instead of calling a script it directly controls servos via GPIO pins. I also fixed a couple of issues that I had with the plugin I used as a base and changed some parts I disliked.
+Based on https://github.com/Salandora/OctoPrint-PanTilt, but instead of calling a script it directly controls servos via GPIO pins. I also fixed a couple of issues that I had with the original and changed some parts I disliked.
 
 I used this [3D Print](https://www.thingiverse.com/thing:708819), but you can use any design that uses two servos.
 
