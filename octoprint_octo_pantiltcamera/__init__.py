@@ -126,7 +126,7 @@ class Octo_pantiltcameraPlugin(octoprint.plugin.SettingsPlugin, octoprint.plugin
             )
         )
 
-__plugin_name__ = "OctoPrint Pan Tilt Camera"
+__plugin_name__ = "OctoPrint Pan Tilt"
 __plugin_pythoncompat__ = ">=2.7,<4"
 
 def __plugin_load__():

@@ -10,9 +10,9 @@ license: AGPLv3
 # TODO
 date: today's date in format YYYY-MM-DD, e.g. 2015-04-21
 
-homepage: https://github.com/antonhensen81/OctoPrint Pan Tilt Camera
-source: https://github.com/antonhensen81/OctoPrint Pan Tilt Camera
-archive: https://github.com/antonhensen81/OctoPrint Pan Tilt Camera/archive/master.zip
+homepage: https://github.com/antonhensen81/OctoPrint-PanTilt
+source: https://github.com/antonhensen81/OctoPrint-PanTilt
+archive: https://github.com/antonhensen81/OctoPrint-PanTilt/archive/master.zip
 
 # TODO
 # Set this to true if your plugin uses the dependency_links setup parameter to include
