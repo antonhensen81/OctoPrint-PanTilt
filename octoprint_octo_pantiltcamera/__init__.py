@@ -7,7 +7,6 @@ import flask
 from time import sleep
 import RPi.GPIO as GPIO
 
-
 class Octo_pantiltcameraPlugin(octoprint.plugin.SettingsPlugin, octoprint.plugin.AssetPlugin, octoprint.plugin.TemplatePlugin, octoprint.plugin.SimpleApiPlugin, octoprint.plugin.StartupPlugin):
     def __init__(self):
         self.panValue = 0
@@ -32,7 +31,13 @@ class Octo_pantiltcameraPlugin(octoprint.plugin.SettingsPlugin, octoprint.plugin
     ##~~ SettingsPlugin mixin
     def get_settings_defaults(self):
         return dict(
-            pan=dict(stepSize=5, initialValue=30, minValue=0, maxValue=50, gpio=17, invert=True),
+            pan=dict(
+                stepSize=5,
+                initialValue=30,
+                minValue=0,
+                maxValue=50,
+                gpio=17,
+                invert=True),
             tilt=dict(
                 stepSize=5,
                 initialValue=95,
@@ -121,10 +126,8 @@ class Octo_pantiltcameraPlugin(octoprint.plugin.SettingsPlugin, octoprint.plugin
             )
         )
 
-
 __plugin_name__ = "OctoPrint Pan Tilt Camera"
 __plugin_pythoncompat__ = ">=2.7,<4"
-
 
 def __plugin_load__():
     global __plugin_implementation__

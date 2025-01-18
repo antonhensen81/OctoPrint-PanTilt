@@ -19,7 +19,7 @@ $(function () {
         };
 
         self.onStartup = function () {
-            var webcam = $("#webcam_container");
+            var webcam = $("#webcam_plugins_container");
             if (webcam === undefined) return;
 
             webcam.after(self.createPanel());
